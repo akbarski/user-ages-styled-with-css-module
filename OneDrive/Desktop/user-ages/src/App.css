@@ -1,0 +1,8 @@
+.App {
+  width: 50vw;
+  height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  background-color: white;
+  padding-bottom: 1rem;
+}
