@@ -1,8 +1,8 @@
-import "./SomeUser.css";
+import style from "./SomeUser.module.css";
 
 export const SomeUser = ({ data }) => {
   return (
-    <div className="user-box">
+    <div className={style.userBox}>
       <p>{`${data.name} ${data.age} years old`}</p>
     </div>
   );

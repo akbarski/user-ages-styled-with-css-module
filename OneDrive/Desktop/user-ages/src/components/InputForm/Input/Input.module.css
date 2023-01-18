@@ -1,8 +1,5 @@
-.input--field {
+.inputField {
     display: flex;
     flex-direction: column;
 }
 
-input:focus {
-    border: none;
-}

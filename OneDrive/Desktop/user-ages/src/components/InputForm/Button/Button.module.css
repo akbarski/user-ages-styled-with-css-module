@@ -1,5 +1,4 @@
-button {
-
+.btn {
     width: 6vw;
     height: 4vh;
     border-radius: 1rem;
@@ -7,6 +6,6 @@ button {
     background-color: green;
 }
 
-button:disabled {
+.btn:disabled {
     background-color: gray;
 }

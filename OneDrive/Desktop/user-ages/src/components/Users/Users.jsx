@@ -1,8 +1,9 @@
 import { SomeUser } from "./SomeUser/SomeUser";
-import "./Users.css"
+import classes from "./Users.module.css";
+
 export const Users = ({ users }) => {
   return (
-    <div className="users">
+    <div className={classes.users}>
       {users.map((elem) => {
         return <SomeUser data={elem} />;
       })}

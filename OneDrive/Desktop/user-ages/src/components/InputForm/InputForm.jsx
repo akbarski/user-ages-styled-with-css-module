@@ -1,7 +1,7 @@
 import { Input } from "./Input/Input";
 import { useState } from "react";
 import { Button } from "./Button/Button";
-import "./InputForm.css";
+import classes from"./InputForm.module.css";
 export const InputForm = ({ addUser }) => {
   const [name, setName] = useState("");
   const [age, setAge] = useState("0");
@@ -28,7 +28,7 @@ export const InputForm = ({ addUser }) => {
   };
 
   return (
-    <form className="input-form">
+    <form className={classes.inputForm}>
       <Input
         id="name"
         inputType="text"
@@ -37,7 +37,7 @@ export const InputForm = ({ addUser }) => {
         onChange={changeName}
       />
 
-      <div className="input-range">
+      <div className={classes.inputRange}>
         <Input
           id="age"
           inputType="range"
@@ -45,7 +45,7 @@ export const InputForm = ({ addUser }) => {
           value={age}
           onChange={changeAge}
         />
-        <p className="age--text">{age}</p>
+        <p className={classes.ageText}>{age}</p>
       </div>
       <Button
         title="ADD"
